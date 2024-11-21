@@ -1,0 +1,387 @@
+
+
+
+  header {
+      position: relative;
+      width: 100%;
+      height: 31vh;  /* Full viewport height */
+      
+      background-image: url(https://imengine.public.prod.cmg.infomaker.io/?uuid=ab08c090-4d27-54cd-976f-4a640f341f05&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.84428&width=1500&height=844&x=1.0E-5&y=0.0788);
+
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+   /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Navbar Container */
+    .navbar {
+      background-color: #50C878; /* Dark background for navbar */
+      width: 100%;  /* Full-width */
+      display: flex; /* Flexbox layout for horizontal items */
+      justify-content: center; /* Center items horizontally */
+      padding: 10px 0; /* Padding on top and bottom */
+    }
+
+    /* Navbar List */
+    .navbar ul {
+      list-style-type: none;
+      display: flex; /* Align list items horizontally */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar List Items */
+    .navbar li {
+      margin: 0 20px; /* Space between items */
+    }
+
+    /* Navbar Links */
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px; /* Adjust font size */
+      padding: 14px 20px; /* Padding inside each link */
+      display: block;
+      transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    /* Hover Effect */
+    .navbar a:hover {
+      background-color: #00ff00; /* Darker shade on hover */
+      border-radius: 4px; /* Rounded corners on hover */
+    }
+
+
+    /* Mobile Responsive - Stack items on small screens */
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+      }
+
+      .navbar li {
+        margin: 10px 0; /* Less space between items on mobile */
+      }
+    }
+
+    body {background-image: url('images/background-image.png');
+    }
+
+    h3 {display: block;
+       background-color: forestgreen;
+       background-size: cover;
+       width: 150%;
+       align-content: center;
+       font-family: sans-serif;
+       padding: 4px 5px;}
+
+    p1 {display: block;
+        background-color: mediumspringgreen;
+        width: 33%;
+        font-family: sans-serif;
+        font-size: 11px;}
+
+
+    /* Image Slider Container */
+.image-slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  overflow: hidden; /* Hide overflowing images */
+}
+
+/* Left and Right Arrows */
+.arrow-left, .arrow-right {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Image Container */
+.image-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.image-container img {
+  width: 500px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.video {justify-content: center;
+ display: flex;
+}
+
+    .block-heading {
+      text-align: center;
+    background-color: #4CAF50;  /* Green background (adjust as needed) */
+    color: white;  /* White text color */
+    padding: 15px 30px;  /* Padding around the text */
+    font-size: 2.5rem;  /* Font size of the heading */
+    font-weight: bold;  /* Make the heading bold */
+    border-radius: 8px;  /* Optional: adds rounded corners */
+}
+table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+            background-color: #ffffff;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .win {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .loss {
+            background-color: #f44336;
+            color: white;
+        }
+
+        footer {
+            background-color: yellow;
+            color: white;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        footer .social-media a {
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer .social-media a:hover {
+            color: #4CAF50; /* Green color on hover */
+        }
+
+
+         .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pagination button {
+            padding: 5px 10px;
+            margin: 0 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .pagination button:hover {
+            background-color: #45a049;
+        }
+        .pagination .active {
+            background-color: #45a049;
+        }
+
+
+
+
+     /* Container for the table */
+.table-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.membership-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.membership-table th, .membership-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Header Styling */
+.membership-table th {
+    background-color: #4CAF50; /* Green background for headers */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Row Styling */
+.membership-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+.membership-table tr:hover {
+    background-color: #ddd; /* Slight grey on hover for row */
+}
+
+/* Column Styling */
+.membership-table td {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Table Responsive */
+@media (max-width: 768px) {
+    .membership-table {
+        font-size: 1rem;
+    }
+
+    .membership-table th, .membership-table td {
+        padding: 10px;
+    }
+}
+
+nav { display: flex;
+  align-items: center;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   justify-content: center;
+}
+
+.margin {margin-right: 20px;}
+.contact-section {
+    display: flex;
+  background-color: #white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.contact-details p {
+  margin: 10px 0;
+  background-color: #FFFFFF;  /* Green background (adjust as needed) */
+    color: black;  /* White text color */
+    padding: 15px 30px;
+}
+
+.contact-details a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: #FFFFFF;  /* Green background (adjust as needed) */
+    color: black;  /* White text color */
+    padding: 15px 30px;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+  background-color: #4caf50;  /* Green background (adjust as needed) */
+    color: white;  /* White text color */
+    padding: 15px 30px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-section {background-image: url('images/background-image.png');}
